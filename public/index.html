@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    <!-- Example CSS -->
+    <link href="./css/style.example.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="Main" style="background-color: #f1f3ff">
+      <nav class="navbar navbar-expand-lg navbar-light t">
+        <div class="container">
+          <a class="navbar-brand" href="#" style="background-color: #0d28a6; width: 150px; display: inline-block; text-align: center">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="a1">
+            <div class="navbar-nav ms-auto Fw-bold">
+              <a class="nav-link-disable">BRC</a>
+              <button data-bs-toggle="collapse" data-bs-target="#a1">
+                <span><i class="bi bi-x"></i></span>
+              </button>
+              <a class="nav-link active" aria-current="page" href="#">Our Sevices</a>
+              <a class="nav-link active" href="#">Why Us</a>
+              <a class="nav-link active" href="#">Testimonial</a>
+              <a class="nav-link active" href="#">FAQ</a>
+              <a class="nav-link active" href="#" style="background-color: #5cb85f; color: white">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- akhir navbar -->
+
+      <!-- jumbotron -->
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col mt-5">
+              <h1>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+              <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+              <button style="display: none">
+                <a href="search">Mulai sewa Mobil</a>
+              </button>
+            </div>
+            <div class="col-md-6 mt-4">
+              <img src="./asset/img_car.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <center>
+        <div class="card">
+          <form action="#Ds" class="Ds" id="Ds">
+            <select name="Ds" id="Driver">
+              <option value="true">Dengan Driver</option>
+              <option value="false">Tanpa Driver</option>
+            </select>
+            <input type="date" />
+            <select>
+              <option value="0">08:00 WIB</option>
+              <option value="1">09:00 WIB</option>
+              <option value="2">10:00 WIB</option>
+              <option value="0">11:00 WIB</option>
+              <option value="1">12:00 WIB</option>
+            </select>
+            <button id="load-btn" value="Ds" style="list-style: none">
+              <li>
+                <a href="#">cari mobil</a>
+              </li>
+            </button>
+            <button id="clears" style="list-style: none">
+              <li>
+                <a href="#">Clear</a>
+              </li>
+            </button>
+          </form>
+        </div>
+      </center>
+    </section>
+    <div id="#mobil-list"></div>
+    <!-- Example Javascript -->
+    <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.example.js"></script>
+    <script type="text/javascript" src="./scripts/car.example.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script>
+  </body>
+</html>
